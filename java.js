@@ -7,13 +7,12 @@ const phrases = [
   
   let currentIndex = 0;
   
-  // Fonction pour changer la phrase
   function changePhrase() {
     const headerText = document.querySelector('.header-text');
     headerText.textContent = phrases[currentIndex];
-    currentIndex = (currentIndex + 1) % phrases.length; // Boucle sur les phrases
+    currentIndex = (currentIndex + 1) % phrases.length; 
   }
   
-  // Change la phrase toutes les 4 secondes
+des
   setInterval(changePhrase, 4000);
   
